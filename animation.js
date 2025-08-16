@@ -4,7 +4,8 @@ const ctx = backround.getContext("2d");
 backround.width = window.innerWidth;
 backround.height = window.innerHeight;
 //images
-let mario = [{mushroom},{smalllmario},{biiiigmario}]
+
+let mario = ['mushroom.jpeg','smalllmario.jpeg','biiiigmario.jpeg']
 let imgselect = 0
 for(let i = 0 ; i < 999999 ; i ++ ){
 
@@ -20,9 +21,7 @@ function animate() {
 marioz.src = `${mario[imgselect]}`
 if (imgselect == 2 ){
     imgselect = 0
-}
-
-  
+} 
   // Request the next frame
   requestAnimationFrame(animate);
 }
